@@ -16,6 +16,12 @@ Use a real deployed origin when building for production so sitemap, robots, and 
 SITE_ORIGIN=https://example.com npm run build
 ```
 
+For this repository's GitHub Pages deployment, use:
+
+```sh
+SITE_ORIGIN=https://rhnvrm.github.io/sketch-is-more npm run build
+```
+
 Optional:
 
 ```sh
@@ -70,6 +76,6 @@ SITE_URL=http://127.0.0.1:8000 CDP_LIST_URL=http://127.0.0.1:9229/json/list npm 
 4. Run `npm run verify:public` to catch accidental localhost canonical, Open Graph, Twitter, sitemap, or robots URLs.
 5. Run `npm run audit:site` against the built site.
 6. Run `npm run audit:offline` to verify service-worker repeat visits.
-7. Deploy the generated static files from the repository root.
+7. GitHub Actions deploys the generated static files to GitHub Pages from `.github/workflows/deploy-pages.yml`.
 
 Do not hand-edit generated root HTML files. Edit `src/pages/*.html`, `book-data.js`, scripts, CSS, or `scripts/render-site.mjs`, then rebuild.
