@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "node scripts/render-site.mjs",
+    "audit:site": "node scripts/audit-site.mjs",
+    "audit:offline": "node scripts/audit-offline.mjs",
+    "verify:release": "node scripts/verify-release.mjs",
+    "verify:public": "REQUIRE_PUBLIC_ORIGIN=1 node scripts/verify-release.mjs"
+  }
+}

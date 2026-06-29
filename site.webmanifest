@@ -1,0 +1,47 @@
+{
+  "name": "Sketch Is More",
+  "short_name": "Sketch Is More",
+  "description": "Coffee with an Architect: sketches, buildings, plans, journeys, and paintings by Ravindra Verma.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "scope": "./",
+  "background_color": "#f8f2e8",
+  "theme_color": "#161413",
+  "categories": ["books", "art", "portfolio"],
+  "icons": [
+    {
+      "src": "./public/book/thumb/1.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Begin the Book",
+      "short_name": "Begin",
+      "description": "Open the short authored walk through Sketch Is More.",
+      "url": "./index.html#sanctuary",
+      "icons": [
+        {
+          "src": "./public/book/thumb/7.webp",
+          "sizes": "512x512",
+          "type": "image/webp"
+        }
+      ]
+    },
+    {
+      "name": "Full Reader",
+      "short_name": "Reader",
+      "description": "Read Sketch Is More with wide sheets kept together.",
+      "url": "./reader.html",
+      "icons": [
+        {
+          "src": "./public/book/thumb/8.webp",
+          "sizes": "512x512",
+          "type": "image/webp"
+        }
+      ]
+    }
+  ]
+}

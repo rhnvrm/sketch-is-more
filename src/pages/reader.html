@@ -1,0 +1,40 @@
+<main>
+  <section class="reader-view" id="reader">
+    <div class="reader-bar">
+      <button type="button" class="reader-prev" aria-label="Previous page">&#8592;</button>
+      <output class="reader-count" aria-live="polite">Page 1 / 136</output>
+      <button type="button" class="reader-next" aria-label="Next page">&#8594;</button>
+    </div>
+    <div class="reader-stage">
+      <div class="reader-frame" aria-live="polite"></div>
+    </div>
+    <div class="reader-foot">
+      <input
+        class="reader-progress-range"
+        type="range"
+        min="1"
+        max="136"
+        value="1"
+        aria-label="Reading position"
+        data-reader-progress
+      />
+      <form class="reader-page-jump" data-reader-page-form>
+        <input
+          id="reader-page-number"
+          type="number"
+          min="1"
+          max="136"
+          inputmode="numeric"
+          value="1"
+          aria-label="Go to page"
+          data-reader-page-number
+        />
+        <button type="submit">Go</button>
+      </form>
+    </div>
+  </section>
+  <div class="zoom-shell" id="zoom-shell" hidden role="dialog" aria-modal="true" aria-label="Page zoomed view">
+    <button class="zoom-dismiss" type="button" aria-label="Close zoom">&#215;</button>
+    <div class="zoom-stage"></div>
+  </div>
+</main>
